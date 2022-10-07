@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+/* CONTENT */
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-image: url("florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+    background-blend-mode: darken;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.card {
+    flex: 1;
+    width: 75%;
+}
