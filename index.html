@@ -20,27 +20,25 @@
             <div class="card-body">
                 <h4 class="card-title">Vad är GitHub Flow?</h4>
                 <p class="card-text">GitHub Flow är en viktig del i hur man arbetar med Git och GitHub.
-                    GitHub är ett kodhanteringssystem där man skapar struktur för sitt projekt
+                    GitHub är ett kodhanteringssystem där man skapar struktur för sitt projekt.
                     Det handlar om att effektivisera arbetet om man ska arbeta med ett uppdrag i ett team där varje
                     gruppmedlem ska utför sin uppgift ("branch") för att sedan slå samman dem till ett slutgiltigt
                     dokument ("main"). Detta är något som M. Trofast Gunnarsson (personlig kommunikation, 7 oktober,
-                    2022) har lyft fram i sin videoinspelning "Git och GitHub" på lärplattformen Canvas </p>
+                    2022) lyfter fram i sin videoinspelning "Git och GitHub" på lärplattformen Canvas för oss studenter
+                </p>
                 <h4 class="card-title">Såhär kan flödet se ut: </h4>
                 <ul>
                     <li>
                         Utse projektledare
                         <ul>
-                            <li>Projektledaren skapar ett repository ("repo") i GitHub - <strong> New repo </strong>
+                            <li><strong> New repo </strong> - Projektledaren skapar ett repository ("repo") i GitHub.
                             </li>
-                            <li>Projektledare bjuder in/lägger till övriga gruppmedlemmar i detta repo - <strong>
-                                    Settings
-                                    - Collaborators - Add collaborators </strong></li>
-                            <li>Projektledaren delar upp repot i olika uppgifter ("issues") - <strong> Issues - Add
-                                    issues
-                                </strong></li>
-                            <li>Projektledaren delegerar uppgifter till övriga gruppmedlemmar - <strong> Assignees
-                                </strong>
-                            </li>
+                            <li><strong>Settings - Collaborators - Add collaborators </strong> - Projektledare bjuder
+                                in/lägger till övriga gruppmedlemmar i detta repo.</li>
+                            <li><strong> Issues - Add issues </strong> - Projektledaren delar upp repot i olika
+                                uppgifter ("issues"). </li>
+                            <li><strong> Assignees </strong> - Projektledaren delegerar uppgifter till övriga
+                                gruppmedlemmar. </li>
                         </ul>
                     </li>
 
@@ -48,13 +46,11 @@
                         Klona repot
                         <ul>
                             <li>Respektive gruppmedlem måste acceptera inbjudan på mejl och du hänvisas direkt till
-                                detta
-                                repo i GitHub</li>
-                            <li>Kopiera länken som visas under "Clone" i repot. Ställ dig sedan i rätt mapp på din dator
-                                där
-                                du vill att repot ska plockas ner (klonas) till, och klistra in länken i kommandotolken
-                                ("Terminalen")
-                                <strong> git clone LÄNK </strong>
+                                detta repo i GitHub. </li>
+                            <li>Ställ dig i rätt mapp på din dator där du vill att repot ska plockas ner (klonas), och
+                                öppna sedan "Terminalen" för mappen. </li>
+                            <li><strong> git clone LÄNK </strong> - Kopiera in länken i "Terminalen" som visas under
+                                "Clone" i repot på GitHub.
                             </li>
                         </ul>
                     </li>
@@ -63,9 +59,9 @@
                         Öppna Visual Studio Code
                         <ul>
                             <li>Öppna "Terminalen" i VS Code</li>
-                            <li>Skapa en ny branch - <strong> git checkout -b NAMN</strong></li>
-                            <li>Kontrollera att du har skapat en ny branch som du jobbar i - <strong> git branch
-                                </strong>
+                            <li><strong> git checkout -b NAMN</strong> - Skapa en ny branch. </li>
+                            <li><strong> git branch </strong> - Kontrollera att du har skapat en ny branch som du jobbar
+                                i.
                             </li>
                         </ul>
                     </li>
@@ -73,46 +69,45 @@
                     <li>
                         Ändringar i koden
                         <ul>
-                            <li>När du är klar för att pusha upp till GitHub - <strong> git status</strong>för att se
-                                allting som modifierats utifrån det repo du plockade ner från GitHub</li>
-                            <li>Lägg till modifierade filer - </li><strong>git add .FIL/MAPP </strong> alt. för att
-                            lägga
-                            till allt <strong> git add * </strong>
-                            <li>Säkerhetskopiera din kod - <strong> git commit -m "VALFRITT MEDDELANDE"
-                                </strong>(Meddelandet ska kortfattat beskrivas med ett eller två ord vad som har ändrats
-                                eller lagts till genom denna commit) </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Pusha upp koden till Github
-                        <ul>
-                            <li>Pusha upp branchen - <strong> git push -u origin NAMN </strong> om det är första gången
-                                som
-                                du laddar upp just den branchen på GitHub, annars <strong> git push </strong>
+                            <li><strong> git status</strong> - för att se allting som modifierats utifrån det repo du
+                                plockade ner från GitHub. </li>
+                            <li><strong>git add .FIL/MAPP | git add * </strong> - Lägg till modifierade filer. OBS! Lägg
+                                till alla modifierade filer med hjälp av asterix.
                             </li>
+                            <li><strong> git commit -m "VALFRITT MEDDELANDE" </strong> - Lägg till ett (kortfatta)
+                                meddelande med ett eller två ord gällande vad som har ändrats eller lagts till genom
+                                denna commit. </li>
                         </ul>
                     </li>
                     <li>
-                        Gör pull-request i GitHub
+                        Pusha upp koden
                         <ul>
-                            <li>Gör en pull-request på GitHub - <strong> Pull-request </strong></li>
                             <li>
-                                Lägg till en
-                                kommentar
-                                och ge projektledaren åtkomst till din branch <strong> Reviews </strong>
+                                <strong> git push -u origin NAMN | git push </strong> - När du är klar för att
+                                pusha upp till GitHub. OBS! Om du redan har pushat upp just den branch som du arbetar i
+                                skriv endast git push.
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Gör pull-request
+                        <ul>
+                            <li><strong> Pull-request </strong> - Gör en pull-request på GitHub. </li>
+                            <li><strong> Reviews </strong> - Lägg till en
+                                kommentar och ge projektledaren åtkomst till din branch. </li>
                         </ul>
                     </li>
 
                     <li>
                         Slå samman en branch till main
                         <ul>
-                            <li>Gå in i pull-request - <strong> Added files - File Changes </strong>för att kontrollera
-                                att
-                                det inte ska bli en "merge conflict"</li>
-                            <li>Ändra till goodkänd - <strong> Review </strong>och lämna en kommentar t.ex. "Ser bra ut"
+                            <li><strong> Added files - File Changes </strong> - Gå in i pull-request för att kontrollera
+                                att det inte ska bli en "merge conflict". </li>
+                            <li><strong> Review </strong> - Ändra till goodkänd och lämna en kommentar t.ex. "Ser bra
+                                ut".
                             </li>
-                            <li>När alla brancher är godkända ska respektive gruppmedlem slå samman sin branch med main
+                            <li><strong> Merge </strong> - När alla brancher är godkända ska respektive gruppmedlem slå
+                                samman sin branch med main.
                             </li>
                         </ul>
                     </li>
@@ -120,21 +115,22 @@
                     <li>
                         Städa upp
                         <ul>
-                            <li>Se till att ändra branch och stå i main</li>
-                            <li>Respektive gruppmedlem ska radera sin branch på GitHub - <strong> Delete branch
-                                </strong>
+                            <li><strong> git branch checkout main </strong> - Se till att ändra branch och stå i main.
                             </li>
-                            <li>Respektive gruppmedlem kan även radera sin branch på sin dator - <strong> git branch -d
-                                    NAMN
-                                </strong></li>
-                            <li>För varje slutförd "branch" som har blivit sammanslagen med "main" - <strong> Close
-                                    Issue
-                                </strong> och lämna kommentar t.ex. "Den är klar"</li>
+                            <li><strong> Delete branch </strong> - Respektive gruppmedlem ska radera sin branch på
+                                GitHub.
+                            </li>
+                            <li><strong> git branch -d NAMN </strong> -Respektive gruppmedlem kan även radera sin branch
+                                på sin dator. </li>
+                            <li><strong> Close issue </strong> - Stäng varje slutförd "branch" som har blivit
+                                sammanslagen med "main" på GitHub. Kom ihåg att även här lämna en kommentar t.ex. "Den
+                                är klar".
+                            </li>
                         </ul>
                     </li>
                 </ul>
-                <a href="https://docs.github.com/en/get-started/quickstart/github-flow" class="btn btn-primary">Läs
-                    mer om GitHub Flow</a>
+                <a href="https://docs.github.com/en/get-started/quickstart/github-flow" class="btn btn-primary">Läs mer
+                    om GitHub Flow</a>
             </div>
         </div>
 
@@ -146,11 +142,10 @@
                 <p class="card-text">
                 <p>
                     Med flexbox kan man enkelt göra en hemsida responsiv, d.v.s. att sidans layout fungerar lika bra
-                    på dator, som surfplattor och mobiler.
-                    Som utvecklare måste du ha koll på flödesriktningarna för hur man använder flexbox. Se bilden
-                    nedan
+                    på dator, som surfplattor och mobiler. Som utvecklare måste du ha koll på flödesriktningarna för hur
+                    man använder flexbox. Se bilden nedan
                 </p>
-                <img src="/flexbox-axis.png">
+                <img src="flexbox-axis.png">
 
                 <p>
                     Sedan ska utvecklaren sätta olika egenskaper och tilldelar dessa olika värden
@@ -204,11 +199,9 @@
                 </p>
                 <h4 class="card-title">Hur fungerar DOM?</h4>
                 <p>
-                    Enligt MDN Web Docs (2022) är DOM är alltså inget programmeringsspråk, utan är istället ett webb-API
-                    och behövs för att kunna
-                    skapa och förändra webbsidor. Med programmeringsspråket JavaScript kan man som utvecklare
-                    använda som verktyg för att skapa dynamiska webbsidor genom att manipulera och förändra en webbsidas
-                    DOM-modell.
+                    Enligt MDN Web Docs (2022) är DOM alltså inget programmeringsspråk, utan är istället ett webb-API
+                    och behövs för att kunna skapa och förändra webbsidor. Med programmeringsspråket JavaScript kan man
+                    som utvecklare använda DOM som verktyg.
                 </p>
                 </p>
             </div>
@@ -222,14 +215,13 @@
                 <p>
                     Med "clean code" (eller på svenska "fin kod") innebär det att man som utvecklare strukturerar koden
                     på ett logiskt sätt. Man ska undvika att skriva så mycket kod som möjligt för att göra koden mer
-                    läs- och testbar samt
-                    tydlig och lätt att förstå. Det innebär också att man ska namnge variabler, klasser och id med
-                    konkreta namn (Developers!, 2022).
-                    Något som M. Trofast Gunnarsson (personlig kommunikation, 7 oktober, 2022) lyfte fram i sitt inlägg
-                    "Viktigt med tydlig och lättläst kod"
-                    på lärplattformen Canvas för oss studenter. Hon menar att det är av stor vikt att kommentera sin kod
-                    för att komma ihåg hur du tänkte när du skrev koden om du
-                    vid ett senare tillfälle ska läsa den, eller om någon annan ska läsa din kod.
+                    läs- och testbar samt tydlig och lätt att förstå. Det innebär också att man ska namnge variabler,
+                    klasser och id med konkreta namn (Developers!, 2022).
+                    Något som M. Trofast Gunnarsson (personlig kommunikation, 7 oktober, 2022) lyfter fram i sitt inlägg
+                    "Viktigt med tydlig och lättläst kod" på lärplattformen Canvas. Hon menar att det är av stor vikt
+                    att kommentera sin kod
+                    för att komma ihåg hur du tänkte när du skrev koden om du vid ett senare tillfälle ska läsa den,
+                    eller om någon annan ska läsa din kod.
                 </p>
                 <p>
                     Allt detta har stor betydelse, särskilt om du arbertar eller ska arbeta med andra programmerare i
@@ -257,31 +249,27 @@
                 <p class="card-text">
                 <p>
                     Ramverk är en tilläggstjänst som gör det enklare och mer effektivt att arbeta i ett
-                    programmeringsspråk.
-                    Som utvecklare kan man välja och vraka mellan redan existerande kommandon och funktioner som
-                    ramverket innehar och sätta in i sin egen kod.
+                    programmeringsspråk. Som utvecklare kan man välja och vraka mellan redan existerande kommandon och
+                    funktioner som ramverket innehar och sätta in i sin egen kod.
                 </p>
                 <p>
                     På så sätt får man väldigt mycket på köpet så man slipper göra allt
-                    från grunden, och blir därmed en mer effektiv programmerare.
+                    från grunden, och blir därmed en mer tidseffektiv programmerare.
                 </p>
                 <p>
                     Inom Javascript finns det många kända ramverk för frontend, t.ex. React, Angular, Vue och Ember.
-                    Även
-                    Node.js gör att du kan koda backend mer effektivt i Javascript.
+                    Även Node.js gör att du kan koda backend mer effektivt i Javascript.
 
                     Som fullstack kan man använda exempelvis React i frontend och Node.JS i backend.
                 </p>
                 <p>
                     Det är extremt vanligt att man använder ramverk i webbutveckling idag. I och med att vi oftast
-                    arbetar
-                    utifrån det agila arbetssättet så hjälper ramverk oss att snabbt komma framåt i vår kodning.
+                    arbetar utifrån det agila arbetssättet så hjälper ramverk oss att snabbt komma framåt i vår kodning.
                 </p>
                 <h4 class="card-title">Hur fungerar ramverk?</h4>
                 <p>
                     Vanligtvis startar man med att plocka ihop ramverk som passar med projektet som man jobbar med och
-                    utgår
-                    från det när man väl ska börja koda.
+                    utgår från det när man väl ska börja koda.
                     Det krävs både kunskap och erfarenhet att hitta och dra nytta av rätt ramverk för sitt projekt.
                 </p>
                 <p>
@@ -295,16 +283,14 @@
                 <p>
                     <strong> OBS!</strong>
                     Att använda stora tunga ramverk när man inte är i behov av det kan tröga ner din sida eftersom du få
-                    med
-                    dig
-                    alla filerna i ramverket oavsett om du använder dem eller inte.
+                    med dig alla filerna i ramverket oavsett om du använder dem eller inte.
                     Ramverk är bra men ska endas användas där de gör nytta!
                 </p>
                 <p>
-                    M. Trofast Gunnarsson (personlig kommunikation, 7 oktober, 2022) lyfte fram i sitt inlägg
+                    M. Trofast Gunnarsson (personlig kommunikation, 7 oktober, 2022) lyfter fram i sitt inlägg
                     "Ramverk och kodbibliotek" att Bootstrap är ett populärt frontend-ramverk som är skapat för att
-                    snabbt kunna skapa mobilvänliga
-                    (responsiva) webbsidor. Något som har blivit alltmer viktigt i dagens samhälle, då vi använder
+                    snabbt kunna skapa mobilvänliga (responsiva) webbsidor. Något som har blivit alltmer viktigt i
+                    dagens samhälle, då vi använder
                     mindre skärmar som mobiler.
                 </p>
                 </p>
